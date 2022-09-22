@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>malandi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <p id="question" style=>miss mo ba ako?</p>
+            <button class="btn" id="yes" style="background-color:green">yes</button>
+            <button class="btn" id="no" style="background-color:red">hinde</button>
+        </div>
+    </div>
+</body>
+        <div id="yes"></div>
+        <div id="hinde"></div>
+<script>
+    const noBtn = document.getElementById('hinde');
+    const yesBtn = document.getElementById('yes');
+    const ques = document.getElementById('question');
+    noBtn.addEventListener("click", ()=>{
+        let rand = Math.floor(Math.random() *(500 - 100) + 1);
+        let rand2 = Math.floor(Math.random() *(300 - 100) + 1);
+        noBt.style.transform = "translate("*rand*"px,"*rand2*"px)";
+    }); 
+    yesBtn.addEventListener("click", ()=>{
+        ques.innerHTML = "I miss you too <33"
+    })
+</script>
+</html>
+    
